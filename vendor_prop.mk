@@ -175,7 +175,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=403 \
     sys.vendor.shutdown.waittime=500 \
-    vendor.video.disable.ubwc=1
+    vendor.video.disable.ubwc=1 \
+    vendor.display.disable_partial_split=1
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -204,7 +205,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.fflag.override.settings_network_and_internet_v2=true \
     ro.telephony.iwlan_operation_mode=legacy \
     ro.telephony.use_old_mnc_mcc_format=true
-
 
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
