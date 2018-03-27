@@ -157,6 +157,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2
 
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=196610 \
+    ro.sf.lcd_density=403 \
+    vendor.display.disable_partial_split=1 \
+    vendor.display.disable_rotator_downscale=1 \
+    vendor.gralloc.enable_fb_ubwc=1
+
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
@@ -174,11 +182,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.nfc_nci=nqx.default \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp \
-    ro.opengles.version=196610 \
-    ro.sf.lcd_density=403 \
     sys.vendor.shutdown.waittime=500 \
-    vendor.video.disable.ubwc=1 \
-    vendor.display.disable_partial_split=1
+    vendor.video.disable.ubwc=1
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -225,7 +230,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.high_fps_early_gl_phase_offset_ns=9000000 \
     debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
 
-# SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
