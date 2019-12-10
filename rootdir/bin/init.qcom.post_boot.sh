@@ -2685,8 +2685,11 @@ case "$target" in
             echo 50000 > /proc/sys/kernel/sched_short_burst_ns
 
             # cpuset settings
-            echo 0-3 > /dev/cpuset/background/cpus
+            echo 0-7 > /dev/cpuset/top-app/cpus
+            echo 0-3,6-7 > /dev/cpuset/foreground/cpus
+            echo 0-1 > /dev/cpuset/background/cpus
             echo 0-3 > /dev/cpuset/system-background/cpus
+            echo 0-3 > /dev/cpuset/restricted/cpus
 
             # disable thermal bcl hotplug to switch governor
             echo 0 > /sys/module/msm_thermal/core_control/enabled
