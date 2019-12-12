@@ -139,7 +139,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
-    vendor.display.color@1.0-impl
+    vendor.display.color@1.0-impl \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9_vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \
