@@ -14,3 +14,5 @@ type keylayout_file, file_type, vendor_file_type;
 
 # Kcal
 type kcal_dev, sysfs_type, fs_type;
+type sysfs_hgain, sysfs_type, fs_type;
+type sysfs_mgain, sysfs_type, fs_type;
