@@ -179,7 +179,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     qemu.hw.mainkeys=0 \
     ro.build.shutdown_timeout=0 \
     ro.control_privapp_permissions=log \
-    ro.hardware.nfc_nci=nqx.default \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp \
     sys.vendor.shutdown.waittime=500 \
