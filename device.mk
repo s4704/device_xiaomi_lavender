@@ -95,6 +95,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.a2dp@1.0-impl \
     libbthost_if \
     libldacBT_dec
 
